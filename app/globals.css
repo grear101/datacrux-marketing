@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-sans);
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  /* Navy scale - the base background/surface colors throughout the brand */
+  --color-navy-950: #070c16;
+  --color-navy-900: #0b1220;
+  --color-navy-800: #111a2d;
+  --color-navy-700: #1c2a44;
+
+  /* Electric blue - the brand's primary accent */
+  --color-blue-500: #2f6fed;
+  --color-blue-400: #5b8ff5;
+  --color-blue-300: #8fb2f8;
+
+  --color-ice-50: #f4f7fc;
+  --color-slate-400: #8a94a6;
+  --color-slate-500: #677184;
+}
+
+body {
+  background: var(--color-navy-900);
+  color: var(--color-ice-50);
+}
+
+.diamond-bullet {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  background: var(--color-blue-400);
+}
