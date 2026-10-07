@@ -25,30 +25,34 @@ export default function HomePage() {
     <div>
       <TryAmaraWidget />
 
-      <section className="max-w-6xl mx-auto px-6 pt-20 pb-24 text-center">
-        <p className="font-display text-xs tracking-[0.25em] text-blue-300 uppercase mb-5">
-          Decode. Discover. Dominate.
-        </p>
-        <h1 className="font-display text-4xl sm:text-5xl font-semibold leading-tight max-w-3xl mx-auto">
-          Your AI sales agent, selling for you around the clock
-        </h1>
-        <p className="text-slate-400 text-lg mt-6 max-w-xl mx-auto">
-          AMARA chats with your customers, negotiates within limits you set, and
-          closes the sale - on your website and WhatsApp, 24/7.
-        </p>
-        <div className="flex items-center justify-center gap-4 mt-9">
-          <Link
-            href="/contact"
-            className="bg-blue-500 hover:bg-blue-400 text-white font-medium rounded-lg px-6 py-3 transition"
-          >
-            Get AMARA for your business
-          </Link>
-          <a
-            href="#try-it"
-            className="border border-navy-700 hover:bg-navy-800 text-ice-50 font-medium rounded-lg px-6 py-3 transition"
-          >
-            Try it live ↓
-          </a>
+      <section className="relative max-w-6xl mx-auto px-6 pt-20 pb-24 text-center overflow-hidden">
+        <div className="hero-glow" aria-hidden="true" />
+
+        <div className="relative z-10">
+          <p className="font-display text-xs tracking-[0.25em] text-blue-300 uppercase mb-5">
+            Decode. Discover. Dominate.
+          </p>
+          <h1 className="font-display text-4xl sm:text-5xl font-semibold leading-tight max-w-3xl mx-auto">
+            <span className="shimmer-text">AMARA</span>, your smart sales agent — selling for you 24/7
+          </h1>
+          <p className="text-slate-400 text-lg mt-6 max-w-xl mx-auto">
+            AMARA chats with your customers, negotiates within limits you set, and
+            closes the sale - on your website and WhatsApp, around the clock.
+          </p>
+          <div className="flex items-center justify-center gap-4 mt-9">
+            <Link
+              href="/contact"
+              className="bg-blue-500 hover:bg-blue-400 text-white font-medium rounded-lg px-6 py-3 transition"
+            >
+              Get AMARA for your business
+            </Link>
+            <a
+              href="#try-it"
+              className="border border-navy-700 hover:bg-navy-800 text-ice-50 font-medium rounded-lg px-6 py-3 transition"
+            >
+              Try it live ↓
+            </a>
+          </div>
         </div>
       </section>
 

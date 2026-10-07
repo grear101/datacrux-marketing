@@ -33,3 +33,36 @@ body {
   transform: rotate(45deg);
   background: var(--color-blue-400);
 }
+
+/* "AMARA" in the hero headline - a slowly shimmering gradient (blue to
+   white and back), standing apart from the rest of the heading. */
+.shimmer-text {
+  background: linear-gradient(90deg, var(--color-blue-400), #ffffff, var(--color-blue-400));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* A soft gradient glow behind the hero section - navy fading through
+   electric blue into white, like a light source rather than a hard
+   color block. */
+.hero-glow {
+  position: absolute;
+  inset: -10% -10% auto -10%;
+  height: 480px;
+  background: radial-gradient(
+    ellipse at top,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(47, 111, 237, 0.22) 35%,
+    rgba(11, 18, 32, 0) 75%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
